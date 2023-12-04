@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guinazu</title>
+    <!-- IMPORTANT! KEEP THE CDN FOR THE STYLES TO WORK -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- IMPORTANT! KEEP THE CDN FOR THE STYLES TO WORK -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+</head>
+
+<body>
+
+    <div class="about-Hero-bg h-96 md:min-h-[680px] w-full text-white relative">
+        <!-- navbar -->
+        <div class="flex w-11/12 xl:w-10/12 mx-auto pt-6 justify-between items-center relative z-30">
+            <a href="index.html">
+                <img class="max-w-[45vw]" src="./img/logo-navbar.png" alt="logo-navbar">
+                <p class="text-xs sm:text-base text-right">Mat. N° 0421 | Mat. N° 0498</p>
+            </a>
+            <div class="hidden lg:flex gap-x-7 text-lg xl:gap-x-14 items-center font-semibold">
+                <a href="">Venta</a>
+                <a href="">Alquiler</a>
+                <a href="">Tasar</a>
+                <a href="">Servicios</a>
+                <a href="about.html">Nosotros</a>
+                <a href="">Contacto</a>
+            </div>
+            <div onclick="toggleMenuMobile()" class="lg:hidden">
+                <img src="./img/Burguer.png" alt="burguer icon">
+            </div>
+        </div>
+        <div
+            class="absolute inset-0 pb-16 flex justify-center items-end font-extrabold text-center px-5 sm:px-10 text-[5vw] md:text-[3vw] leading-tight">
+            <h1>Tenemos mucho más de lo que buscás. <br> + 1000 PROPIEDADES</h1>
+        </div>
+    </div>
+    <!-- HERO -->
+    <!-- MENU -->
+    <div id="menu-mobile" class="hidden fixed inset-0 bg-white text-black z-50">
+        <div class="flex w-11/12 xl:w-10/12 mx-auto z-40 relative pt-6 justify-between items-center">
+            <div>
+                <img class="max-w-[45vw]" src="./img/logo-footer.png" alt="logo-navbar">
+            </div>
+            <div onclick="toggleMenuMobile()" class="">
+                <img src="./img/burguer-black.png" alt="burguer icon">
+            </div>
+        </div>
+        <div
+            class="fixed inset-0 gap-y-5 grid place-content-center text-center h-screen text-lg xl:gap-x-14 text-black font-bold">
+            <a href="">Venta</a>
+            <a href="">Alquiler</a>
+            <a href="">Tasar</a>
+            <a href="">Servicios</a>
+            <a href="">Nosotros</a>
+            <a href="">Contacto</a>
+        </div>
+    </div>
+    <!-- MENU -->
+
+    <!-- NEED LINK TO WHATSAPP -->
+    <a href="https://wa.link/bjvbh1"
+        class="fixed right-5 bottom-32 z-30 bg-[#EEEEEE] h-10 w-10 md:h-20 md:w-20 grid place-content-center md:p-4 rounded-full">
+        <img class="" src="img/icono-wp-fixed.png" alt="">
+</a>
+
+    <!-- CONTENT -->
+    <div class="flex flex-col lg:flex-row items-center justify-between w-10/12 mx-auto mt-14 md:mt-28 mb-20 md:mb-40 lg:text-xl font-semibold gap-10">
+
+        <div class="flex-1">
+            <div class="flex items-center mb-6 gap-x-4">
+                <img src="img/people-icon.png" alt="">
+                <p class="text-2xl text-[#1A4240] font-semibold">SOBRE <span class="font-bold">NOSOTROS</span></p>
+            </div>
+            <div class="max-w-[700px] leading-[1.82] tracking-wide">
+                <p class="mb-10">
+                    En 1970, Alejandro Guiñazu dio inicio a una apasionante historia en la gestión inmobiliaria,
+                    marcando el nacimiento de un proyecto que hoy es una realidad: una empresa eficiente comprometida en
+                    ofrecer un servicio de excelencia.
+                </p>
+                <p>Día a día estamos enfocados en brindar el mejor servicio y una atención integral a nuestros clientes
+                    con el aporte de profesionales dedicados y a la vanguardia del mercado inmobiliario.
+                </p>
+            </div>
+        </div>
+
+        <div id="slider-container" class="flex-1 overflow-hidden relative max-w-[80vw] sm:max-w-[600px] rounded-2xl">
+            <div id="slider" class="duration-500 ease-in-out flex">
+                <div class="slider-item">
+                    <!-- desktop banner -->
+                    <img class="min-w-[80vw] sm:min-w-[600px] block h-auto rounded-2xl" src='img/Carousel-1.jpg'
+                        alt="" />
+
+                </div>
+                <div class="slider-item">
+                    <!-- desktop banner -->
+                    <img class="min-w-[80vw] sm:min-w-[600px] block h-auto rounded-2xl" src='img/Carousel-2.jpg'
+                        alt="" />
+                </div>
+                <div class="slider-item">
+                    <!-- desktop banner -->
+                    <img class="min-w-[80vw] sm:min-w-[600px] block h-auto rounded-2xl" src='img/Carousel-3.jpg'
+                        alt="" />
+                </div>
+            </div>
+
+            <div class="absolute inset-0 flex justify-between items-center px-5">
+                <div id="prev-btn" class="w-5"><img src="img/carousel-arrow.png" alt=""></div>
+                <div id="next-btn" class=" w-5"><img class="rotate-180" src="img/carousel-arrow.png" alt=""></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex flex-col lg:flex-row items-center justify-between w-10/12 mx-auto text-[#404040] mt-14 md:mt-28 mb-40 lg:text-xl gap-10">
+
+        <div class="flex-1 space-y-8">
+            <div>
+                <div class="flex items-center mb-3 gap-x-4">
+                    <img src="img/Stars.png" alt="">
+                    <p class="text-2xl text-[#1A4240] font-semibold">NUESTRA <span class="font-bold">EXPERIENCIA</span>
+                    </p>
+                </div>
+                <div class="max-w-[700px] leading-[1.82] tracking-wide">
+                    <p>Más de 50 años de experiencia en las distintas áreas del rubro inmobiliario nos avalan y hacen de
+                        la empresa una tradición que se renueva cada año.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center mb-3 gap-x-4">
+                    <img src="img/Library-books.png" alt="">
+                    <p class="text-2xl text-[#1A4240] font-semibold">NUESTRA <span class="font-bold">MISIÓN</span></p>
+                </div>
+                <div class="max-w-[700px] leading-[1.82] tracking-wide">
+                    <p>Comprometidos con tu éxito: nuestra misión es servir con profesionalismo, ética y eficiencia a
+                        nuestros clientes.</p>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center mb-3 gap-x-4">
+                    <img src="img/Trending-up.png" alt="">
+                    <p class="text-2xl text-[#1A4240] font-semibold">NUESTRA <span class="font-bold">VISIÓN</span></p>
+                </div>
+                <div class="max-w-[700px] leading-[1.82] tracking-wide">
+                    <p>Liderar el mercado inmobiliario con grandes operadores capaces de resolver y dar la mejor
+                        respuesta a las necesidades y las inquietudes planteadas por nuestros clientes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-1 bg-[#F9F4F4] w-full lg:max-w-[600px] rounded-[19px] pt-10 md:pt-20 pb-10 px-8 md:px-[68px] font-semibold">
+            <p class="font-bold text-black mb-10 text-2xl"> Envíanos tu consulta, te asesoramos.</p>
+            
+            <input class="w-full border-none outline-none bg-transparent mb-2 placeholder-[#464444]" placeholder="Nombre" type="text">
+            <div class="h-[1px] bg-black w-full mb-8"></div>
+
+            <input class="w-full border-none outline-none bg-transparent mb-2 placeholder-[#464444]" placeholder="Email" type="text">
+            <div class="h-[1px] bg-black w-full mb-8"></div>
+
+            <input class="w-full border-none outline-none bg-transparent mb-2 placeholder-[#464444]" placeholder="Celular" type="text">
+            <div class="h-[1px] bg-black w-full mb-8"></div>
+
+            <textarea class="w-full border-none outline-none bg-transparent mb-2 placeholder-[#464444]" placeholder="Escribí tu consulta..." name="" id="" ></textarea>
+            <div class="h-[1px] bg-black w-full mb-8"></div>
+
+            <div class="text-white w-fit ml-auto py-4 px-[59px] bg-[#1A4240] rounded-2xl leading-none cursor-pointer">Enviar</div>
+        </div>
+
+    </div>
+
+
+    <footer class=" bg-[#F1F0F0] pt-8 pb-5 px-[7.5vw]">
+        <div class="flex flex-col sm:flex-row gap-y-4 justify-between w-full mb-5 sm:mb-7">
+            <div>
+                <img class="max-w-[45vw]" src="./img/logo-footer.png" alt="logo-navbar">
+                <!-- <p class="text-xs sm:text-base text-right">Mat. N° 0421 | Mat. N° 0498</p> -->
+            </div>
+            <div class="flex items-center gap-5">
+                <img class="w-7 h-auto" src="img/face-icon.png" alt="">
+                <img class="w-7 h-auto" src="img/ig-icon.png" alt="">
+                <img class="w-7 h-auto" src="img/whatsapp-icon.png" alt="">
+            </div>
+        </div>
+
+        <div class="mb-5 sm:mb-10 w-full h-[1px] bg-[#888383]"></div>
+
+        <div class="grid sm:grid-cols-2 2xl:grid-cols-4 mb-5 gap-5 font-semibold">
+
+            <div class="">
+                <p class="text-[#111111] text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Ubicación</p>
+                <div class="flex gap-3 text-sm sm:text-base">
+                    <div>
+                        <img class="w-4 h-auto" src="img/icono-ubicacion.png" alt="">
+                    </div>
+                    <p>Córdoba 1253 Piso 4, Of. 42 <br> Rosario, Santa Fe, Argentina</p>
+                </div>
+            </div>
+
+            <div class="">
+                <p class="text-[#111111] text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Atención</p>
+                <div class="flex gap-3 text-sm sm:text-base">
+                    <div>
+                        <img class="w-[23px] h-auto" src="img/icono-reloj.png" alt="">
+                    </div>
+                    <p>9 a 17 hs</p>
+                </div>
+            </div>
+            <div class="">
+                <p class="text-[#111111] text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Contacto</p>
+                <div class="flex gap-3 text-sm sm:text-base mb-1">
+                    <div><img class="w-[24px] h-auto" src="img/icono-telefono.png" alt=""></div>
+                    <p>0341 4263148 | 0341 4481943</p>
+                </div>
+                <div class="flex gap-3 text-sm sm:text-base mb-1">
+                    <div><img class="w-[19px] h-auto" src="img/whatsapp-icon.png" alt=""></div>
+                    <p>0341 2619329</p>
+                </div>
+                <div class="flex gap-3 text-sm sm:text-base mb-1">
+                    <div><img class="w-[19px] h-auto" src="img/Mail.png" alt=""></div>
+                    <p>info@inmobiliariaguinazu.com.ar</p>
+                </div>
+            </div>
+            <div class="flex 2xl:justify-end">
+                <div>
+                    <p class="text-[#111111] text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Corredores Inmobiliarios</p>
+                    <div class="flex gap-3 text-sm sm:text-base mb-1">
+                        <div><img class="w-[19px] h-auto" src="img/icono-c.i-1.png" alt=""></div>
+                        <p>C.I. Enrique Freire Mat. N° 0421</p>
+                    </div>
+                    <div class="flex gap-3 text-sm sm:text-base mb-1">
+                        <div><img class="w-[19px] h-auto" src="img/icono-c.i-1.png" alt=""></div>
+                        <p>C.I. Martín Guiñazú Mat. N° 0498</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3 w-full h-[1px] bg-[#888383]"></div>
+        <div class="flex flex-col md:flex-row justify-between gap-3 w-full font-semibold">
+            <p>Copyright 2023 Alejandro Guiñazú - Todos los derechos reservados</p>
+            <p>Diseño y desarrollo by AXYOMA GLOBAL</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <!-- NAVBAR TOGGLES -->
+    <script type="text/javascript" src="./navbar.js"></script>
+    <!-- CAROUSEL -->
+    <script type="text/javascript" src="./slider.js"></script>
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script> -->
+    <!-- 
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ -->
+
+
+
+
+
+</body>
+
+</html>

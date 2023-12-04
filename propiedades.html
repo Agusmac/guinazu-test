@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guinazu</title>
+    <!-- IMPORTANT! KEEP THE CDN FOR THE STYLES TO WORK -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- IMPORTANT! KEEP THE CDN FOR THE STYLES TO WORK -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+</head>
+
+<body>
+
+    <div class="bg-white h-[90px] sm:h-[120px] w-full text-[#1A4240] relative">
+        <!-- navbar -->
+        <div class="flex w-11/12 xl:w-10/12 mx-auto pt-6 justify-between items-center relative z-30">
+            <a href="index.html">
+                <img class="max-w-[45vw]" src="./img/logo-footer.png" alt="logo-navbar">
+                <!-- <p class="text-xs sm:text-base text-right">Mat. N° 0421 | Mat. N° 0498</p> -->
+            </a>
+            <div class="hidden lg:flex gap-x-7 text-lg xl:gap-x-14 items-center font-semibold">
+                <a href="">Venta</a>
+                <a href="">Alquiler</a>
+                <a href="">Tasar</a>
+                <a href="">Servicios</a>
+                <a href="about.html">Nosotros</a>
+                <a href="">Contacto</a>
+            </div>
+            <div onclick="toggleMenuMobile()" class="lg:hidden">
+                <img src="./img/burguer-black.png" alt="burguer icon">
+            </div>
+        </div>
+
+    </div>
+    <!-- HERO -->
+    <!-- MENU -->
+    <div id="menu-mobile" class="hidden fixed inset-0 bg-white text-black z-50">
+        <div class="flex w-11/12 xl:w-10/12 mx-auto z-40 relative pt-6 justify-between items-center">
+            <div>
+                <img class="max-w-[45vw]" src="./img/logo-footer.png" alt="logo-navbar">
+            </div>
+            <div onclick="toggleMenuMobile()" class="">
+                <img src="./img/burguer-black.png" alt="burguer icon">
+            </div>
+        </div>
+        <div
+            class="fixed inset-0 gap-y-5 grid place-content-center text-center h-screen text-lg xl:gap-x-14 text-black font-bold">
+            <a href="">Venta</a>
+            <a href="">Alquiler</a>
+            <a href="">Tasar</a>
+            <a href="">Servicios</a>
+            <a href="">Nosotros</a>
+            <a href="">Contacto</a>
+        </div>
+    </div>
+    <!-- MENU -->
+
+    <!-- NEED LINK TO WHATSAPP -->
+    <a href="https://wa.link/bjvbh1"
+        class="fixed right-5 bottom-32 z-30 bg-[#EEEEEE] h-10 w-10 md:h-20 md:w-20 grid place-content-center md:p-4 rounded-full">
+        <img class="" src="img/icono-wp-fixed.png" alt="">
+    </a>
+
+    <!-- CONTENT -->
+
+
+    <div class="w-full">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.1809548010015!2d-60.642944523448044!3d-32.94623157186932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1781b6010f%3A0x967d90209f280574!2sAG%20Alejandro%20Gui%C3%B1azu%20INMOBILIARIA!5e0!3m2!1ses-419!2sar!4v1701695446148!5m2!1ses-419!2sar"
+            width="100%" height="680" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="my-14 md:my-20 mx-auto text-center text-xl md:text-3xl font-bold text-[#1A4240]">PROPIEDADES DESTACADAS
+    </div>
+
+    <div class="mx-auto flex items-center justify-center mb-24 md:mb-48 gap-3 md:gap-10">
+
+        <div id="prev-btn" class="w-5"><img src="img/carousel-arrow.png" alt=""></div>
+
+        <div id="slider-container" class="overflow-hidden relative max-w-[80vw] 2xl:max-w-[1400px]">
+            <div id="slider" class="duration-500 ease-in-out flex">
+
+                <div class="slider-item flex min-w-[80vw] 2xl:min-w-[1400px] justify-center items-center gap-[4vw]">
+                    <div class="flex-1 w-full bg-[#1A403F] text-white max-w-[413px]">
+                        <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                            450.000
+                        </p>
+                        <div class="h-[200px] md:h-[282px]  relative">
+                            <img class="w-full absolute inset-0 h-full  object-cover"
+                                src='img/carousel-group-example.jpg' alt="" />
+                        </div>
+                        <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                            <p class="font-bold ">Av Pellegrini 190, Rosario, Santa Fe</p>
+                            <p>Casa, 4 dormitorios</p>
+                        </div>
+                        <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9]">
+                            <p>IDEAL USO INSTITUCIONAL</p>
+                            <p>2 PLANTAS</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 w-full bg-[#1A403F] text-white max-w-[413px]">
+                        <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                            450.000
+                        </p>
+                        <div class="h-[200px] md:h-[282px]  relative">
+                            <img class="w-full absolute inset-0 h-full  object-cover"
+                                src='img/carousel-group-example-2.jpg' alt="" />
+                        </div>
+                        <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                            <p class="font-bold ">Av Pellegrini 190, Rosario, Santa Fe</p>
+                            <p>Casa, 4 dormitorios</p>
+                        </div>
+                        <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9]">
+                            <p>IDEAL USO INSTITUCIONAL</p>
+                            <p>2 PLANTAS</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 w-full bg-[#1A403F] text-white max-w-[413px]">
+                        <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                            450.000
+                        </p>
+                        <div class="h-[200px] md:h-[282px]  relative">
+                            <img class="w-full absolute inset-0 h-full  object-cover" src='img/test-carousel.png'
+                                alt="" />
+                        </div>
+                        <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                            <p class="font-bold ">Av Pellegrini 190, Rosario, Santa Fe</p>
+                            <p>Casa, 4 dormitorios</p>
+                        </div>
+                        <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9]">
+                            <p>IDEAL USO INSTITUCIONAL</p>
+                            <p>2 PLANTAS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item flex min-w-[80vw] 2xl:min-w-[1400px] justify-center items-center gap-[4vw]">
+                    <div class="flex-1 w-full bg-[#1A403F] text-white max-w-[413px]">
+                        <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                            450.000
+                        </p>
+                        <div class="h-[200px] md:h-[282px]  relative">
+                            <img class="w-full absolute inset-0 h-full  object-cover"
+                                src='img/carousel-group-example.jpg' alt="" />
+                        </div>
+                        <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                            <p class="font-bold ">Av Pellegrini 190, Rosario, Santa Fe</p>
+                            <p>Casa, 4 dormitorios</p>
+                        </div>
+                        <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9]">
+                            <p>IDEAL USO INSTITUCIONAL</p>
+                            <p>2 PLANTAS</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 w-full bg-[#1A403F] text-white max-w-[413px]">
+                        <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                            450.000
+                        </p>
+                        <div class="h-[200px] md:h-[282px]  relative">
+                            <img class="w-full absolute inset-0 h-full  object-cover"
+                                src='img/carousel-group-example-2.jpg' alt="" />
+                        </div>
+                        <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                            <p class="font-bold ">Av Pellegrini 190, Rosario, Santa Fe</p>
+                            <p>Casa, 4 dormitorios</p>
+                        </div>
+                        <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9]">
+                            <p>IDEAL USO INSTITUCIONAL</p>
+                            <p>2 PLANTAS</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 w-full bg-[#1A403F] text-white max-w-[413px]">
+                        <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                            450.000
+                        </p>
+                        <div class="h-[200px] md:h-[282px]  relative">
+                            <img class="w-full absolute inset-0 h-full  object-cover" src='img/test-carousel.png'
+                                alt="" />
+                        </div>
+                        <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                            <p class="font-bold ">Av Pellegrini 190, Rosario, Santa Fe</p>
+                            <p>Casa, 4 dormitorios</p>
+                        </div>
+                        <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9]">
+                            <p>IDEAL USO INSTITUCIONAL</p>
+                            <p>2 PLANTAS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-item flex min-w-[80vw] 2xl:min-w-[1400px] justify-center items-center gap-[4vw]">
+                    <div class="flex-1 w-full bg-[#1A403F] text-white max-w-[413px]">
+                        <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                            450.000
+                        </p>
+                        <div class="h-[200px] md:h-[282px]  relative">
+                            <img class="w-full absolute inset-0 h-full  object-cover"
+                                src='img/carousel-group-example.jpg' alt="" />
+                        </div>
+                        <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                            <p class="font-bold ">Av Pellegrini 190, Rosario, Santa Fe</p>
+                            <p>Casa, 4 dormitorios</p>
+                        </div>
+                        <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9]">
+                            <p>IDEAL USO INSTITUCIONAL</p>
+                            <p>2 PLANTAS</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 w-full bg-[#1A403F] text-white max-w-[413px]">
+                        <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                            450.000
+                        </p>
+                        <div class="h-[200px] md:h-[282px]  relative">
+                            <img class="w-full absolute inset-0 h-full  object-cover"
+                                src='img/carousel-group-example-2.jpg' alt="" />
+                        </div>
+                        <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                            <p class="font-bold ">Av Pellegrini 190, Rosario, Santa Fe</p>
+                            <p>Casa, 4 dormitorios</p>
+                        </div>
+                        <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9]">
+                            <p>IDEAL USO INSTITUCIONAL</p>
+                            <p>2 PLANTAS</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 w-full bg-[#1A403F] text-white max-w-[413px]">
+                        <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                            450.000
+                        </p>
+                        <div class="h-[200px] md:h-[282px]  relative">
+                            <img class="w-full absolute inset-0 h-full  object-cover" src='img/test-carousel.png'
+                                alt="" />
+                        </div>
+                        <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                            <p class="font-bold ">Av Pellegrini 190, Rosario, Santa Fe</p>
+                            <p>Casa, 4 dormitorios</p>
+                        </div>
+                        <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9]">
+                            <p>IDEAL USO INSTITUCIONAL</p>
+                            <p>2 PLANTAS</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div id="next-btn" class=" w-5"><img class="rotate-180" src="img/carousel-arrow.png" alt=""></div>
+    </div>
+    <!-- CAROUSEL -->
+
+
+    <!-- SELECTOR -->
+    <div
+        class="mx-auto max-w-[85%] 2xl:max-w-[1400px] gap-10 2xl:gap-24 mb-24 flex flex-col lg:flex-row justify-between text-xl xl:text-3xl text-[#1A4240] items-center">
+        <div class="">
+            <p class="font-bold">Propiedades en venta</p>
+            <p>Departamentos</p>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center gap-10 flex-1 w-full">
+            <div onclick="toggleTransaction()"
+                class="relative flex w-full gap-3 justify-between items-center min-w-[10vw] border-b border-[#888383] pb-4">
+                <p id="selected-transaction-p">Venta</p>
+                <img class="w-5 h-3 relative top-1" src="img/Arrow.png" alt="">
+                <div id="transaction-selector"  class="hidden text-xl absolute z-10 bg-gray-200 w-full top-full">
+                    <div class="p-3 bg-gray-200 hover:bg-gray-100 cursor-pointer">
+                        <p>Alquiler</p>
+                    </div>
+                    <div class="p-3 bg-gray-200 hover:bg-gray-100 cursor-pointer">
+                        <p>Temporario</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="toggleType()"
+                class="relative flex w-full gap-3 justify-between items-center min-w-[10vw] border-b border-[#888383] pb-4">
+                <p id="selected-type-p">Departamentos</p>
+                <img class="w-5 h-3 relative top-1" src="img/Arrow.png" alt="">
+                <div id="type-selector" class="hidden text-xl absolute z-10 bg-gray-200 w-full top-full">
+                    <div class="p-3 bg-gray-200 hover:bg-gray-100 cursor-pointer">
+                        <p>Casa</p>
+                    </div>
+                    <div class="p-3 bg-gray-200 hover:bg-gray-100 cursor-pointer">
+                        <p>Garage</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="toggleDorms()"
+                class="relative flex w-full gap-3 justify-between items-center min-w-[10vw] border-b border-[#888383] pb-4">
+                <p id="selected-dorm-p">Dormitorios</p>
+                <img class="w-5 h-3 relative top-1" src="img/Arrow.png" alt="">
+                <div id="dorms-selector" class="hidden text-xl absolute z-10 bg-gray-200 w-full top-full">
+                    <div class="p-3 bg-gray-200 hover:bg-gray-100 cursor-pointer">
+                        <p>1 Dormitorio</p>
+                    </div>
+                    <div class="p-3 bg-gray-200 hover:bg-gray-100 cursor-pointer">
+                        <p>2 Dormitorios</p>
+                    </div>
+                    <div class="p-3 bg-gray-200 hover:bg-gray-100 cursor-pointer">
+                        <p>3 Dormitorios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SELECTOR -->
+
+    <!-- PROPERTY GRID -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto max-w-[85%] 2xl:max-w-[1400px] gap-5 mb-24">
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/carousel-group-example.jpg' alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/carousel-group-example-2.jpg'
+                    alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/test-carousel.png' alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/carousel-group-example.jpg' alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/carousel-group-example.jpg' alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/carousel-group-example-2.jpg'
+                    alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/test-carousel.png' alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/carousel-group-example.jpg' alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/carousel-group-example.jpg' alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/carousel-group-example-2.jpg'
+                    alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/test-carousel.png' alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full bg-[#1A403F] mx-auto text-white max-w-[413px]">
+            <p class="mx-auto text-center text-lg md:text-2xl py-1"><span class="font-bold">VENTA</span> U$S
+                450.000
+            </p>
+            <div class="h-[200px] md:h-[282px]  relative">
+                <img class="w-full absolute inset-0 h-full  object-cover" src='img/carousel-group-example.jpg' alt="" />
+            </div>
+            <div class="px-5 text-sm md:text-xl py-2 drop-shadow-lg relative z-10">
+                <p class="font-bold text-sm md:text-base">Av Pellegrini 190, Rosario, Santa Fe</p>
+                <p>Casa, 4 dormitorios</p>
+            </div>
+            <div class="bg-[#153332] font-bold text-sm md:text-xl px-5 py-3 text-[#D9D9D9] uppercase">
+                <p>Impecable</p>
+                <p>Cochera</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- CONTENT -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class=" bg-[#F1F0F0] pt-8 pb-5 px-[7.5vw]">
+        <div class="flex flex-col sm:flex-row gap-y-4 justify-between w-full mb-5 sm:mb-7">
+            <div>
+                <img class="max-w-[45vw]" src="./img/logo-footer.png" alt="logo-navbar">
+            </div>
+            <div class="flex items-center gap-5">
+                <img class="w-7 h-auto" src="img/face-icon.png" alt="">
+                <img class="w-7 h-auto" src="img/ig-icon.png" alt="">
+                <img class="w-7 h-auto" src="img/whatsapp-icon.png" alt="">
+            </div>
+        </div>
+
+        <div class="mb-5 sm:mb-10 w-full h-[1px] bg-[#888383]"></div>
+
+        <div class="grid sm:grid-cols-2 2xl:grid-cols-4 mb-5 gap-5 font-semibold">
+
+            <div class="">
+                <p class="text-[#111111] text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Ubicación</p>
+                <div class="flex gap-3 text-sm sm:text-base">
+                    <div>
+                        <img class="w-4 h-auto" src="img/icono-ubicacion.png" alt="">
+                    </div>
+                    <p>Córdoba 1253 Piso 4, Of. 42 <br> Rosario, Santa Fe, Argentina</p>
+                </div>
+            </div>
+
+            <div class="">
+                <p class="text-[#111111] text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Atención</p>
+                <div class="flex gap-3 text-sm sm:text-base">
+                    <div>
+                        <img class="w-[23px] h-auto" src="img/icono-reloj.png" alt="">
+                    </div>
+                    <p>9 a 17 hs</p>
+                </div>
+            </div>
+            <div class="">
+                <p class="text-[#111111] text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Contacto</p>
+                <div class="flex gap-3 text-sm sm:text-base mb-1">
+                    <div><img class="w-[24px] h-auto" src="img/icono-telefono.png" alt=""></div>
+                    <p>0341 4263148 | 0341 4481943</p>
+                </div>
+                <div class="flex gap-3 text-sm sm:text-base mb-1">
+                    <div><img class="w-[19px] h-auto" src="img/whatsapp-icon.png" alt=""></div>
+                    <p>0341 2619329</p>
+                </div>
+                <div class="flex gap-3 text-sm sm:text-base mb-1">
+                    <div><img class="w-[19px] h-auto" src="img/Mail.png" alt=""></div>
+                    <p>info@inmobiliariaguinazu.com.ar</p>
+                </div>
+            </div>
+            <div class="flex 2xl:justify-end">
+                <div>
+                    <p class="text-[#111111] text-xl sm:text-2xl font-bold mb-2 sm:mb-4">Corredores Inmobiliarios</p>
+                    <div class="flex gap-3 text-sm sm:text-base mb-1">
+                        <div><img class="w-[19px] h-auto" src="img/icono-c.i-1.png" alt=""></div>
+                        <p>C.I. Enrique Freire Mat. N° 0421</p>
+                    </div>
+                    <div class="flex gap-3 text-sm sm:text-base mb-1">
+                        <div><img class="w-[19px] h-auto" src="img/icono-c.i-1.png" alt=""></div>
+                        <p>C.I. Martín Guiñazú Mat. N° 0498</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3 w-full h-[1px] bg-[#888383]"></div>
+        <div class="flex flex-col md:flex-row justify-between gap-3 w-full font-semibold">
+            <p>Copyright 2023 Alejandro Guiñazú - Todos los derechos reservados</p>
+            <p>Diseño y desarrollo by AXYOMA GLOBAL</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <!-- NAVBAR TOGGLES -->
+    <script type="text/javascript" src="./navbar.js"></script>
+    <!-- CAROUSEL -->
+    <script type="text/javascript" src="./sliderGroup.js"></script>
+    <script type="text/javascript" src="./selector.js"></script>
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script> -->
+    <!-- 
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ -->
+
+
+
+
+
+</body>
+
+</html>
